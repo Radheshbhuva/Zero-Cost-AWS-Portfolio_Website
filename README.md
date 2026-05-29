@@ -1,2 +1,2 @@
 # Zero-Cost-AWS-Portfolio_Website
-Personal portfolio website built with AWS cloud services to demonstrate cloud architecture, deployment, hosting, and modern web development skills.
+Zero-cost AWS portfolio website built with AWS Free Tier services to demonstrate cloud deployment, hosting, security, and scalable architecture practices

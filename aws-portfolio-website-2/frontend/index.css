@@ -55,4 +55,28 @@
   .form-field textarea {
     @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-base font-medium text-primary outline-none transition placeholder:text-slate-500 focus:border-accent focus:ring-2 focus:ring-accent/25 dark:border-slate-600 dark:bg-slate-950 dark:text-white dark:placeholder:text-slate-400;
   }
+
+  .visitor-counter {
+    @apply inline-flex w-full max-w-xs items-center gap-3 rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-left shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-corporate focus-within:ring-2 focus-within:ring-accent dark:border-slate-700 dark:bg-slate-900;
+  }
+
+  .visitor-counter-compact {
+    @apply max-w-fit px-3 py-2;
+  }
+
+  .visitor-counter-icon {
+    @apply grid size-10 shrink-0 place-items-center rounded-lg bg-primary text-xl text-accent dark:bg-slate-950;
+  }
+
+  .visitor-counter-copy {
+    @apply min-w-0;
+  }
+
+  .visitor-counter-label {
+    @apply flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400;
+  }
+
+  .visitor-counter-value {
+    @apply mt-1 block font-display text-lg font-extrabold text-primary dark:text-white;
+  }
 }

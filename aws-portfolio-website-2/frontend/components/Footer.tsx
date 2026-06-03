@@ -1,6 +1,8 @@
 import { FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
 import { contact, profile } from '../data/portfolio';
 import { Container } from './Container';
+import { VisitorCounter } from './VisitorCounter';
+import { VisitorCounterErrorBoundary } from './VisitorCounterErrorBoundary';
 
 export function Footer() {
   return (
@@ -11,6 +13,11 @@ export function Footer() {
           <p className="mt-1 text-sm font-semibold text-accent">{profile.title}</p>
           <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">"{profile.tagline}"</p>
         </div>
+        
+         <VisitorCounterErrorBoundary>
+          <VisitorCounter className="mx-auto lg:mx-0" />
+        </VisitorCounterErrorBoundary>
+        
         <div className="flex justify-center gap-3">
           <a className="footer-icon" href={`mailto:${contact.email}`} aria-label="Email Komal Khakhkhar">
             <FiMail aria-hidden="true" />

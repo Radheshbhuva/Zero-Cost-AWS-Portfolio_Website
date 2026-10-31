@@ -1,6 +1,7 @@
 import type { IconType } from 'react-icons';
 
-export type ProjectCategory = 'Web Development' | 'Cloud' | 'AWS' | 'React' | 'Full Stack';
+export type ProjectCategory = 'All' | 'Full-Stack' | 'Cloud & AWS' | 'Frontend';
+export type ProjectStatus = 'Completed' | 'Under Development' | 'In Development';
 
 export interface ContactInfo {
   email: string;
@@ -22,18 +23,39 @@ export interface EducationItem {
   result: string;
   period: string;
   detail: string;
+  coursework: string[];
 }
 
-export interface SkillItem {
-  name: string;
-  level: number;
-}
-
-export interface SkillGroup {
+export interface SkillCategory {
   title: string;
   description: string;
   icon: IconType;
-  skills: SkillItem[];
+  skills: string[];
+  note?: string;
+}
+
+export interface ProjectItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  status: ProjectStatus;
+  category: 'Full-Stack' | 'Cloud & AWS' | 'Frontend';
+  techStack: string[];
+  description: string;
+  contributions: string[];
+  architectureSummary: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  featured: boolean;
+}
+
+export interface ArchitectureHighlight {
+  id: string;
+  title: string;
+  service: string;
+  summary: string;
+  pattern: string;
+  components: string[];
 }
 
 export interface TimelineItem {
@@ -43,24 +65,6 @@ export interface TimelineItem {
   description: string;
   points: string[];
 }
-
-export interface ProjectItem {
-  title: string;
-  description: string;
-  image: string;
-  techStack: string[];
-  githubUrl: string;
-  liveUrl: string;
-  category: ProjectCategory;
-  outcome: string;
-}
-
-export interface CertificationItem {
-  name: string;
-  issuer: string;
-  status: string;
-}
-
 
 export interface GitHubProfile {
   login: string;

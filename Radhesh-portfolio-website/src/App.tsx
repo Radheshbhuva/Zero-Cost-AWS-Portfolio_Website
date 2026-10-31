@@ -8,9 +8,12 @@ function App() {
   const { isDark, setIsDark } = useDarkMode();
 
   return (
-    <div className="min-h-screen bg-surface text-primary antialiased dark:bg-slate-950 dark:text-slate-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200">
       <ScrollProgress />
-      <Navbar isDark={isDark} onThemeToggle={() => setIsDark(!isDark)} />
+      <Navbar
+        isDark={isDark}
+        onThemeToggle={() => setIsDark(!isDark)}
+      />
       <HomePage />
       <Footer />
     </div>

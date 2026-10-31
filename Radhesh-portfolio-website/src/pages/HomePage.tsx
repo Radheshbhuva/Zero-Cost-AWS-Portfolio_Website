@@ -1,8 +1,9 @@
 import { AboutSection } from '../sections/AboutSection';
+import { ArchitectureSection } from '../sections/ArchitectureSection';
 import { ContactSection } from '../sections/ContactSection';
 import { ExperienceSection } from '../sections/ExperienceSection';
-import { GitHubSection } from '../sections/GitHubSection';
 import { HeroSection } from '../sections/HeroSection';
+import { ProjectsSection } from '../sections/ProjectsSection';
 import { SkillsSection } from '../sections/SkillsSection';
 
 export function HomePage() {
@@ -11,8 +12,9 @@ export function HomePage() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <ArchitectureSection />
+      <ProjectsSection />
       <ExperienceSection />
-      <GitHubSection />
       <ContactSection />
     </main>
   );

@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { ScrollProgress } from './components/ScrollProgress';
@@ -16,6 +17,7 @@ function App() {
       />
       <HomePage />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }

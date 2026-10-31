@@ -234,7 +234,6 @@ export const projects: ProjectItem[] = [
       'Planned cloud storage integration architecture with Amazon S3 using pre-signed URLs for scalable, cost-effective transfers.',
     ],
     architectureSummary: 'Modular NestJS and React architecture designed for scalable file authorization and secure pre-signed cloud transfers.',
-    githubUrl: 'https://github.com/Radheshbhuva/aws-file-sharing-system',
   },
   {
     id: 'lexis-electronics',

@@ -3,7 +3,6 @@ import {
   FiCheckCircle,
   FiClock,
   FiExternalLink,
-  FiGithub,
   FiLayers,
 } from 'react-icons/fi';
 import { AnimatedCard } from '../components/AnimatedCard';
@@ -149,18 +148,6 @@ export function ProjectsSection() {
 
                 {/* Project Actions - Mobile stacked with full width, desktop inline */}
                 <div className="mt-5 flex flex-col sm:flex-row flex-wrap gap-2 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                  {project.githubUrl ? (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex min-h-[42px] items-center justify-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3.5 py-1.5 text-xs font-semibold text-slate-700 shadow-3xs transition hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800"
-                    >
-                      <FiGithub aria-hidden="true" />
-                      <span>View GitHub Code</span>
-                    </a>
-                  ) : null}
-
                   {project.liveUrl ? (
                     <a
                       href={project.liveUrl}
